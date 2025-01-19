@@ -1,7 +1,7 @@
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
-const apiKey = "2d668d8093d0efa882e556fd863e9079";
+const apiKey = "da9e6c791b4560749ddb89effb1b44db";
 
 
 weatherForm.addEventListener("submit", async event => {
@@ -19,12 +19,12 @@ weatherForm.addEventListener("submit", async event => {
 
         } catch (error) {
             console.error(error);
-            dispalyError(error);
+            displayError(error);
             
         }
 
     } else {    
-        dispalyError("Please enter correct city name");
+        displayError("Please enter correct city name");
     }
     console.log("User Input:", city);
 
@@ -50,7 +50,7 @@ function displayWeatherInfo(data){
           main : {temp , humidity},
           weather : [{description, id}]} = data;  // object and array destructuring 
     card.textContent = "";
-    card.style.dispaly = "flex";  
+    card.style.display = "flex";  
     
     const cityDisplay = document.createElement("h1");
     const tempDisplay = document.createElement("p");
@@ -104,13 +104,13 @@ function getWeatherEmoji(weatherId){
 
 }
 
-function dispalyError(message){
+function displayError(message){
 
-    const errorDispaly = document.createElement("p");
-    errorDispaly.textContent = message;
-    errorDispaly.classList.add(".errorDispaly");
+    const errorDisplay = document.createElement("p");
+    errorDisplay.textContent = message;
+    errorDisplay.classList.add(".errorDisplay");
     
     card.textContent = "";
     card.style.display = "flex";
-    card.appendChild(errorDispaly);
+    card.appendChild(errorDisplay);
 }
