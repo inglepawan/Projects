@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #ff6a00, #ee0979); /* Vibrant gradient */
+    animation: gradientAnimation 8s ease infinite;
+    background-size: 400% 400%; /* Stretch background for dynamic effect */
+    position: relative; /* Make sure the background and other elements are positioned correctly */
+}
+
+/* Gradient Animation for background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Add a subtle pattern to the background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png'); /* Pattern URL */
+    opacity: 0.1;
+    z-index: -1; /* Ensure it's below all other content */
+}
+
+/* Login Container */
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box */
+.login-box {
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    position: relative; /* Ensures it stays above the background and pattern */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* Heading Style */
+.login-box h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Input Fields */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.login-box input:focus {
+    border: 2px solid #ffcc00;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Submit Button */
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0072ff;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.login-box button:hover {
+    background-color: #ff4081;
+    transform: scale(1.05);
+}
+
+/* Signup Link */
+.login-box p {
+    margin-top: 15px;
+    color: #b0b0b0;
+    font-size: 1rem;
+}
+
+.login-box p a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-box p a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
