@@ -40,7 +40,7 @@
 
 // async function fetchSkills() {
 //     try {
-//         const response = await fetch("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");
+//         const response = await fetch("");
 //         const skills = await response.json();
 //         const dataList = document.getElementById("skill-list");
 
