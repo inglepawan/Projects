@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-image: url(Images/Background.jpg);
+}   
+
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
