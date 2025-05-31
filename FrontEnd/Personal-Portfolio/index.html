@@ -5,11 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="left">Pawan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+               Hi, My name is <span class="purple">Pawan</span>
+               <div>and I'm a passionate</div>
+               <span id="element"></span>
+               <div class="buttons">
+                <a class="btn" href="/FrontEnd/Personal-Portfolio/Resources/Pawan Ingle_Resume.pdf">Download Resume</a>
+                <a class="btn" href="https://github.com/inglepawan">Visit Github</a>
+               </div>
+            </div>
+            <div class="rightSection">
+               <img src="images/Developer1.png" alt="">
+            </div>
+        </section>
+
+
+      <hr>
+
+
+      <div class="about-me" id="about">
+        <h2>About Me</h2>
+        <br>
+        <p>Hi, I’m <b>Pawan Ingle</b>, an aspiring <b>Full-Stack Web Developer</b> with a strong foundation in the MERN stack <b>(MongoDB, Express.js, React.js, Node.js)</b> and a growing command over <b>SQL and NoSQL</b> databases like <b>PostgreSQL and MongoDB.</b></p><br>
+        <p>I’m currently pursuing my Master of Computer Applications (MCA) at Chandigarh University, driven by a deep interest in building scalable, efficient, and user-centric web applications.</p><br>
+        <p>Before moving into software development, I worked in operations and tech-support-oriented roles at companies like ETS.</p><br>
+        <p>These experiences taught me how to work with precision, think critically, and communicate clearly—skills I now apply directly to my development projects.</p><br>
+        <p>I’m looking for collaborative opportunities to contribute to meaningful software products, learn from experienced teams, and grow as a full-stack engineer. If you're working on something exciting or looking for a developer who’s eager to grow, let’s connect!</p>
+      </div>
+      <hr>
+
+      <div class="services" id="services">
+      <h2>My Services</h2>
+        <div class="box">
+            <div class="left-side">
+            <ul>
+                <li>FrontEnd Development</li>
+                <li>Backend Development</li>
+            </ul>    
+            </div>
+            <div class="right-side">
+               <ul> 
+                <li>Full Stack Development</li>
+                <li>Boostrap Development</li>
+               </ul>
+            </div>
+                
+        </div>
+      </div>
+      <hr>
+      <div class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="proj-box">
+            <div class="left-side">
+            <ul>
+                <li>Personal Portfolio Website</li>
+                <li>E-commerce Website</li>
+            </ul>    
+            </div>
+            <div class="right-side">
+               <ul> 
+                <li>Weather Application</li>
+                <li>Countdown Timer</li>
+               </ul>
+            </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="contact" id="contact">
+        <!-- Contact Form Container -->
+<div class="contact-form-container">
+  <h2>Contact Us</h2>
+  <form class="contact-form" action="#thankyou" method="POST" enctype="multipart/form-data" novalidate>
+
+    <label for="name">Name<span class="required">*</span></label>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+
+    <label for="email">Email ID<span class="required">*</span></label>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+    <label for="requirement">Requirement<span class="required">*</span></label>
+    <textarea id="requirement" name="requirement" placeholder="Describe your project requirements" rows="4" required></textarea>
+
+    <label for="delivery-date">Project Delivery Date<span class="required">*</span></label>
+    <input type="date" id="delivery-date" name="delivery_date" required />
+    <label for="attachment">Attach a file (any type)</label>
+    <input type="file" id="attachment" name="attachment" />
+
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</div>
+<div id="thankyou" class="thankyou-message">
+  <p>✅ Your message has been sent successfully! Thank you for reaching out.</p>
+</div>
+
+      </div>
+    </main>
+<footer>
+  <div class="footer">
+    <div class="footer-first">
+      <h3>Pawan's Developer Portfolio</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+          <i class="fab fa-instagram"><img src="/FrontEnd/Personal-Portfolio/images/instagram-brands.svg" height="30px" width="30px"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pawan-ingle-53a331351/" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"><img src="/FrontEnd/Personal-Portfolio/images/linkedin-brands.svg" height="30px" width="30px"></i>
+        </a>
+        <a href="https://github.com/inglepawan" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+          <i class="fab fa-github"><img src="/FrontEnd/Personal-Portfolio/images/github-brands.svg" height="30px" width="30px"></i>
+        </a>
+        <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+          <i class="fab fa-twitter"><img src="/FrontEnd/Personal-Portfolio/images/x-twitter-brands.svg" height="30px" width="30px"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-second">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-third">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="/FrontEnd/Personal-Portfolio/Resources/Pawan Ingle_Resume.pdf">Resume</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-fourth">
+      <h4>Contact</h4>
+      <ul>
+        <li>Email: pawan@example.com</li>
+        <li>Phone: +91 12345 67890</li>
+        <li>Location: India</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-rights">
+    Copyright &#169; 2025 pawanportfolio.com | All rights reserved.
+  </div>
+</footer>
 
 
     <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer.', 'Web Designer.', 'Web Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
