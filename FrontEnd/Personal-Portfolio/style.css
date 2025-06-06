@@ -584,3 +584,67 @@ footer {
     width: 100%;
   }
 }
+
+/* Add this CSS to your existing CSS file */
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack the menu items vertically */
+        position: absolute; /* Position the menu absolutely */
+        top: 80px; /* Position it below the nav */
+        left: 0; /* Align to the left */
+        background-color: rgb(18, 18, 62); /* Match the nav background */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    nav ul.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Ensure the toggle is visible */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+}
+
+.menu-toggle {
+    display: none; /* Hide the toggle by default */
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Show the toggle on small screens */
+    }
+}
+
+
+/* Hide the navigation links by default on small screens */
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack the menu items vertically */
+        position: absolute; /* Position the menu absolutely */
+        top: 80px; /* Position it below the nav */
+        left: 0; /* Align to the left */
+        background-color: rgb(18, 18, 62); /* Match the nav background */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    nav ul.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle on small screens */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+}
+
+/* Ensure the hamburger icon is hidden on larger screens */
+@media (min-width: 601px) {
+    .menu-toggle {
+        display: none; /* Hide the toggle on larger screens */
+    }
+}

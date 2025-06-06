@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="style.css">            
 </head>
 <body>
+    <h2>Calculator</h2>
+<div class="section">
     <div id="calculator">
         <input id="display" readonly>
         <div id="keys">
+            <button onclick="percentage()" class="operator-btn">%</button>
+            <button onclick="clearEntry()" class="operator-btn">CE</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="backspace()" class="operator-btn">⌫</button>
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
@@ -26,10 +32,11 @@
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
-            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="squareRoot()" class="operator-btn">√</button>            
         </div>
     </div>
-
+    
+</div> 
     <script src="main.js"></script>
 </body>
 </html>
