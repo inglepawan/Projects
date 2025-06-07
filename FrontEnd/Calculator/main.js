@@ -41,3 +41,19 @@ function percentage(){
         display.value = "Error";
     }
 }
+
+document.addEventListener('keydown', function(event) {
+    const key = event.key;
+    const validKeys = ['0','1','2','3','4','5','6','7','8','9','.','+','-','*','/','%'];
+
+    if (validKeys.includes(key)) {
+        appendToDisplay(key);
+    } else if (key === 'Enter') {
+        event.preventDefault(); // Prevent form submission
+        calculate();
+    } else if (key === 'Backspace') {
+        backspace();
+    } else if (key === 'Escape') {
+        clearDisplay();
+    }
+});
