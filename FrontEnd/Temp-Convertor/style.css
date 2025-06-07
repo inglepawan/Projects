@@ -54,6 +54,6 @@ button:hover{
 }
 
 .blink {
-  animation: blink 0.5s steps(1) 5; /* Blinks 5 times quickly */
+  animation: blink 0.5s steps(1) 3; /* Blinks 5 times quickly */
   color: red;
 }
