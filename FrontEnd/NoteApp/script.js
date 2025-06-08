@@ -1,6 +1,5 @@
 const notesContainer = document.querySelector(".notes-container");
 const createBtn = document.querySelector(".btn");
-let notes = document.querySelectorAll(".input-box");
 
 function showNotes(){
     notesContainer.innerHTML = localStorage.getItem("notes");
@@ -11,34 +10,42 @@ function updateStorage(){
     localStorage.setItem("notes", notesContainer.innerHTML);
 }
 
-createBtn.addEventListener("click", ()=>{
-    let inputBox = document.createElement("p");
-    let img = document.createElement("img");
-    inputBox.className = "input-box"
+createBtn.addEventListener("click", () => {
+    const noteWrapper = document.createElement("div");
+    noteWrapper.className = "input-box";
+
+    const inputBox = document.createElement("p");
     inputBox.setAttribute("contenteditable", "true");
-    img.src= "/img/delete.png";
-    notesContainer.appendChild(inputBox).appendChild(img);
-    inputBox.focus();
-})
+    inputBox.style.minHeight = "20px";  // ensures space for cursor
+    inputBox.style.outline = "none";    // no browser outline
+
+    const img = document.createElement("img");
+    img.src = "/img/delete.png";
+
+    noteWrapper.appendChild(inputBox);
+    noteWrapper.appendChild(img);
+    notesContainer.appendChild(noteWrapper);
+
+    inputBox.focus(); // ✅ brings cursor into focus
+});
 
 notesContainer.addEventListener("click", function (e) {
-    if(e.target.tagName === "IMG"){
+    if (e.target.tagName === "IMG") {
         e.target.parentElement.remove();
         updateStorage();
-    }
-    else if(e.target.tagName === "P"){
-        notes= document.querySelectorAll(".input-box");
+    } else if (e.target.tagName === "P") {
+        const notes = document.querySelectorAll(".input-box p");
         notes.forEach(nt => {
-            nt.onkeyup = function(){
+            nt.onkeyup = function () {
                 updateStorage();
             }
         });
     }
-})
+});
 
-document.addEventListener("keydown", event=>{
-    if(event.key === "Enter"){
+document.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
         document.execCommand("insertLineBreak");
         event.preventDefault();
     }
-})
+});
