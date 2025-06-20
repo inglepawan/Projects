@@ -9,7 +9,7 @@ html {
 
 .upper {
   position: relative;
-  height: 50px; /* adjust as needed */
+  height: 30px; /* adjust as needed */
   background-color: rgb(237, 184, 118);
 }
 
@@ -20,21 +20,33 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 13px;
+  padding-top: 5px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(255, 255, 255);
 }
+
 
 /* Right h3 */
 .right {
   position: absolute;
   top: 0;
   right: 100px;
-  padding: 13px;
+  padding-top: 5px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(250, 249, 247);
 
 }
 
 .right img {
   width: 20px;
   vertical-align: middle;
+  padding-right: 5px;
 }
 .logo img{
     width: 67px;
@@ -104,8 +116,13 @@ nav{
 }
 .left p{
     padding: 10px;
-    font-size: 22px;
+    /* font-size: 22px; */
     padding-left: 20px;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    color: rgb(107, 111, 129);
 }
 .left a{
   text-decoration: none;
@@ -125,8 +142,12 @@ nav{
   display: inline;
   list-style: none;
   padding: 10px;
-  font-size: 12px;
   transition: transform 0.3s ease; /* Smooth scale effect */
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
 }
 .right-header ul li:hover {
   transform: scale(1.2);   /* Grows only the hovered item */
@@ -164,6 +185,11 @@ hr{
 
 .category-section li {
   text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
 }
 
 .category-section a {
@@ -201,6 +227,17 @@ hr{
   position: relative;
 }
 
+.video-carousel h2{
+  font-family: garamond-premr-pro;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(11, 11, 11);
+}
+.video-carousel h2:hover{
+  color: rgb(109, 99, 72);
+  cursor: pointer;
+}
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -219,9 +256,9 @@ hr{
   scroll-behavior: smooth;
   width: 100%;
 }
-/* ✅ Hide scrollbar in all major browsers */
+/*  Hide scrollbar in all major browsers */
 .carousel-track::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  display: none; 
 }
 .carousel-item {
   width: 180px;
@@ -239,7 +276,7 @@ hr{
   display: block;
 }
 
-/* ✅ Buttons on sides */
+/*  Buttons on sides */
 button.prev,
 button.next {
   position: absolute;
@@ -277,10 +314,18 @@ button.next {
   margin: 0 auto;
   padding: 40px 20px;
 }
-.second-section h3{
+.second-section h2{
   text-align: center;
   padding-bottom: 50px;
-  font-size: 30px;
+  font-family: garamond-premr-pro;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(10, 10, 10);
+}
+.second-section h2:hover{
+  color: rgb(109, 98, 66);
+  cursor: pointer;
 }
 
 .category-img ul {
@@ -345,15 +390,25 @@ button.next {
   }
 }
 
-.categories-two h3{
+.categories-two h2{
   display: flex;
   justify-content: center;
-  font-size: 30px;
   padding-bottom: 30px;
+  font-family: garamond-premr-pro;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(13, 13, 13);
+}
+.categories-two h2:hover{
+  color: rgb(114, 102, 69);
+  cursor: pointer;
 }
 .sort-by{
   padding-bottom: 50px;
 }
+
+
 .sort-by ul {
   display: flex;
   list-style: none;
@@ -379,7 +434,15 @@ button.next {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: rgb(150, 134, 93);
+}
+.sort-by ul li p:hover{
+  color: rgb(109, 99, 72);
+  cursor: pointer;
 }
 
 /* ---image carousel----------- */
@@ -404,12 +467,12 @@ button.next {
 
 .carousel-track-img {
   display: flex;
-  gap: 20px; /* ✅ Only 2px gap as requested */
+  gap: 20px; /*  Only 2px gap as requested */
   overflow-x: auto;
   scroll-behavior: smooth;
   width: 100%;
 }
-/* ✅ Hide scrollbar in all major browsers */
+/*  Hide scrollbar in all major browsers */
 .carousel-track-img::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
 }
@@ -488,10 +551,13 @@ button.next {
 }
 
 .description {
-  font-size: 14px;
-  font-weight: 500;
   margin-bottom: 6px;
   line-height: 1.3;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
 }
 
 .price-tag {
@@ -538,6 +604,7 @@ button.next {
   border-radius: 20px;
   color: rgb(136, 102, 60);
 }
+
 .why-bartanbaba .why-img{
   display: flex;
   flex-wrap: wrap;
@@ -546,8 +613,8 @@ button.next {
 .why-img img{
   display: flex;
   justify-content: space-around;
-  width: 64px;
-  height: 50px;
+  width: 53px;
+  height: 49px;
   gap: 10px;
 }
 .feature {
@@ -587,13 +654,25 @@ button.next {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: rgb(150, 134, 93);
 }
-.shop-by h3{
+.shop-by h2{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
-  font-size: 30px;
+  font-family: garamond-premr-pro;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(11, 11, 11);
+}
+.shop-by h2:hover{
+  color: rgb(109, 99, 72);
+  cursor: pointer;
 }
 
 /* -----------last container------------------- */
@@ -608,11 +687,19 @@ button.next {
 
 /* -------------blog----------------- */
 
-.blog-section h3{
+.blog-section h2{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
-  font-size: 30px;
+  font-family: garamond-premr-pro;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(9, 9, 9);
+}
+.blog-section h2:hover{
+  color: rgb(109, 99, 72);
+  cursor: pointer;
 }
 
 .blog-section {
@@ -624,7 +711,7 @@ button.next {
 
 .blog-carousel-wrapper {
   position: relative;
-  max-width: 80%;
+  max-width: 100%;
   margin-left: 50px;
   margin-right: 20px;
   overflow: hidden;
@@ -660,16 +747,25 @@ button.next {
 }
 
 .blog-date {
-  font-size: 0.9rem;
-  color: #888;
   margin-top: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: rgb(131, 117, 75);
 }
 
 .blog-description {
-  font-size: 1.05rem;
-  font-weight: 500;
   margin-top: 5px;
   color: #333;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: rgb(3, 3, 3);
+}
+.blog-description:hover{
+  cursor: pointer;
 }
 
 .prev-three, .next-three {
@@ -718,24 +814,31 @@ hr{
 }
 
 .about-me h3 {
-  font-size: 26px;
-  font-weight: 700;
   margin-bottom: 16px;
-  color: #222;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(52, 51, 51);
 }
 
 .about-me p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #555;
   margin-bottom: 20px;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: rgb(52, 51, 51);
 }
 
 .about-me span {
-  font-weight: 600;
-  color: #ff5722;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: rgb(150, 134, 93);
 }
 
 .about-me span:hover {
@@ -748,12 +851,19 @@ hr{
 }
 
 .categories-section h2 {
-  font-size: 32px;
-  font-weight: 700;
   margin-bottom: 30px;
   text-align: center;
   position: relative;
   color: #1a1a1a;
+  font-family: garamond-premr-pro;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(8, 8, 8);
+}
+.categories-section h2:hover{
+  color: rgb(109, 99, 72);
+  cursor: pointer;
 }
 
 .categories-section h2::after {
@@ -782,10 +892,12 @@ hr{
 }
 
 .category h3 {
-  font-size: 20px;
-  font-weight: 600;
   margin-bottom: 14px;
-  color: #333;
+  font-family: glacialIndifference-bold;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.5px;
+  color: rgb(76, 76, 76);
 }
 
 .category p {
@@ -798,13 +910,15 @@ hr{
 /* Links */
 .category a {
   background: #ffece5;
-  color: #ff5722;
   padding: 6px 12px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
   transition: background 0.3s ease, color 0.3s ease;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(76, 76, 76);
 }
 
 .category a:hover {
@@ -882,7 +996,6 @@ input[type="email"] {
 .email-wrapper .submit-btn {
   font-size: 20px;
   height: auto;
-  /* padding: 8px 12px; */
   cursor: pointer;
   background: transparent;
 }
@@ -1042,11 +1155,10 @@ html, body {
 .copyright {
   /* background-color: #f4f4f4; */
   text-align: center;
-  padding: 10px 15px;
+  padding: 0px 15px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 15px;
-  color: #444;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* subtle top shadow */
+  color: #444; 
   border-top: 1px solid #ddd;
   margin-left: 41px;
 
@@ -1206,6 +1318,9 @@ html, body {
     padding: 4px;
   }
 
+  .category-section{
+    display: none;
+  }
   .category-img ul {
     grid-template-columns: 1fr;
   }
@@ -1225,6 +1340,16 @@ html, body {
 
   .blog-item-img {
     flex: 0 0 100%;
+  }
+  .why-bartanbaba{
+      width: 236px;
+      height: auto;
+  }
+  .feature{
+    width: 45px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+    gap: 20px;
   }
 
   .additional-pics img {

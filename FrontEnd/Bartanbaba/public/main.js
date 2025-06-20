@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
   const track = document.querySelector(".carousel-track");
-
+ 
   const scrollAmount = 200; // pixels per click (adjust if needed)
 
   nextButton.addEventListener("click", () => {
