@@ -1402,6 +1402,9 @@ html, body {
     height: auto;
     padding: 8px;
   }
+  .category-section{
+    display: none;
+  }
 
   .center-header, .right {
     position: static;
@@ -1435,3 +1438,49 @@ html, body {
   }
 }
 
+
+
+
+/* ------wrapper---------- */
+
+/* Base styles */
+.icon-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* spacing between icon groups */
+  flex-wrap: wrap; /* wrap icons if needed on very small screens */
+  margin-top: 20px;
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-group i {
+  font-size: 24px; /* adjust icon size */
+  color: #333; /* icon color */
+}
+
+.flex-group span {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Responsive: Ensure horizontal layout even on small screens */
+@media (max-width: 768px) {
+  .icon-group {
+    flex-direction: row !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-group {
+    margin-bottom: 10px;
+  }
+}
